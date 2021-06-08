@@ -160,9 +160,31 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-function game(user, computer){
-    /*add your code here*/
+var ran = Math.random()
+
+  if(ran<=1/3){
+    ran ="rock"
+  }else if(ran<2/3){
+    ran ="paper"
+  }else {
+    ran ="scissors"
+  }
+function game(user, ran){
+  if (user ==="rock" && ran ==="scissors"){
+    return("you win!")
+  }else if(user === ran){
+    return("it's a tie")
+  }else if(user === "scissors" && ran === "paper"){
+    return("you win!")
+  }else if(user === "paper" && ran === "rock"){
+    return("you win!")
+  }else{
+    return("you lose!")
+  }
 }
+
+game("scissors",ran)
+
   
   
 
