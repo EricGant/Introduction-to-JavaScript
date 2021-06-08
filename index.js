@@ -160,7 +160,7 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
-var ran = Math.random()
+let ran = Math.random()
 
   if(ran<=1/3){
     ran ="rock"
@@ -199,9 +199,10 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+function miles(n){
+  return(n*0.621371)
+}
+miles(1)
 
 
 
@@ -213,9 +214,10 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(n){
+  return(n*0.0328084)
   }
+feet(24)
  
 
 
@@ -228,10 +230,13 @@ Using the annoyingSong function below do the following:
   2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
-
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(i){
+  for(i = 0; i < 10;i--){
+    return("{i} bottles of soda on the wall, {i} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall")
   }
+  }
+  annoyingSong(0)
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
