@@ -133,6 +133,8 @@ function hungryDog(a,w){
     return(w*.05)
   }else if(a<1){
     return(w*.04)
+  }else{
+    return('please try again')
   }
 }
 hungryDog(1,15)
@@ -230,12 +232,11 @@ Using the annoyingSong function below do the following:
   2. At each invocation, it should RETURN this string (note: the tests are expecting the same string as below):
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
-function annoyingSong(i){
-  for(i = 0; i < 10;i--){
-    return("{i} bottles of soda on the wall, {i} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall")
+function annoyingSong(n){
+  for(let i = n; i > 0; i--){
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i-1} bottles of soda on the wall`;
   }
-  }
-  annoyingSong(0)
+}
 
 
 
