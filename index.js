@@ -85,10 +85,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(a){
+  return(a*7)
 }
-
+dogYears(4)
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -118,9 +118,24 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(a,w){
+  if (a>=1 && w<=5){
+    return(w*.05)
+  }else if(a>=1 && w<=10){
+    return(w*.04)
+  }else if(a>=1 && w<=15){
+    return(w*.03)
+  }else if(a>=1 && w>15){
+    return(w*.02)
+  }else if(a<=(4/12)){
+    return(w*.1)
+  }else if(a<=(7/12)){
+    return(w*.05)
+  }else if(a<1){
+    return(w*.04)
   }
+}
+hungryDog(1,15)
 
 
 
@@ -212,10 +227,20 @@ Using the grade function below do the following:
    below should return 'you got an F'
 */
   
-function grade(/*Your Code here */){
-  /*Your Code here */
-  }
-  
+function grade(s){
+  if(s<=59){
+      return('you got an F')
+    }else if(s<=69){
+      return('you got a D')
+    }else if(s<=79){
+      return('you got a C')
+    }else if(s<=89){
+      return('you got a B')
+    }else if(s>89){
+      return('you got an A')
+    }
+}
+grade(65)
   
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
