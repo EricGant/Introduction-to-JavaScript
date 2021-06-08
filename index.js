@@ -120,19 +120,19 @@ Use the hungryDog function and feeding requirements below to do the following:
 
 function hungryDog(a,w){
   if (a>=1 && w<=5){
-    return(w*.05)
+    return(w*0.05)
   }else if(a>=1 && w<=10){
-    return(w*.04)
+    return(w*0.04)
   }else if(a>=1 && w<=15){
-    return(w*.03)
+    return(w*0.03)
   }else if(a>=1 && w>15){
-    return(w*.02)
+    return(w*0.02)
   }else if(a<=(4/12)){
-    return(w*.1)
+    return(w*0.1)
   }else if(a<=(7/12)){
-    return(w*.05)
+    return(w*0.05)
   }else if(a<1){
-    return(w*.04)
+    return(w*0.04)
   }else{
     return('please try again')
   }
@@ -217,9 +217,9 @@ Using the feet function below do the following:
 */
 
 function feet(n){
-  return(n*0.0328084)
+  return(n/30.48)
   }
-feet(24)
+feet(1)
  
 
 
